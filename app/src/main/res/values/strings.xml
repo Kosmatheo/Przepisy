@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KosmapoKosciach</string>
+    <string-array name="kategorie_string">
+        <item>Ciasta</item>
+        <item>Ciasteczka</item>
+        <item>Napoje</item>
+        <item>Deser</item>
+    </string-array>
+</resources>
