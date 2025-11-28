@@ -15,6 +15,7 @@ public class RepozytoriumPrzepisow {
         przepisy.add(new Przepis("deser z truskawkami" , "ciasteczka",R.drawable.deser_t, "jaja , czekolada , borówki" , "opis"));
     }
     public static ArrayList<Przepis> zwrocPrzepisy(){
+        wygenerujPrzepisy();
         return przepisy;
     }
 
