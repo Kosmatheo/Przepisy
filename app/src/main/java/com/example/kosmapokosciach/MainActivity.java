@@ -1,5 +1,6 @@
 package com.example.kosmapokosciach;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.kosmapokosciach.databinding.ActivityListaPrzepisowBinding;
 
 public class MainActivity extends AppCompatActivity {
 ListView listViewkategorie;
@@ -32,6 +35,8 @@ ListView listViewkategorie;
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                         view.setBackgroundColor(Color.GRAY);
                         Toast.makeText(MainActivity.this, "Kliknięto element: "+i, Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this , ListaPrzepisowActivity.class);
+                        startActivity(intent);
                     }
                 }
         );
